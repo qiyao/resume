@@ -1,0 +1,213 @@
+
+\documentstyle[hyperref, margin, line]{res}
+
+%\usepackage{hyperref} %previously in the documentstyle options
+%options to hyperref package when in the documentstyle options
+\hypersetup{backref, pdfpagemode=FullScreen, colorlinks=true,backref}
+
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+% 'st' 'nd' 'rd' 'th' superscripts for numbers
+\def\first{{\raise.5ex\hbox{\small st}}}
+\def\second{{\raise.5ex\hbox{\small nd}}}
+\def\third{{\raise.5ex\hbox{\small rd}}}
+\def\fourth{{\raise.5ex\hbox{\small th}}}
+
+%use most of page
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\voffset}{-0.5in}
+%\addtolength{\textwidth}{1.25in}
+%\addtolength{\textheight}{1in}
+
+%use only a bit more page than default
+\addtolength{\oddsidemargin}{-0.30in}
+\addtolength{\voffset}{-0.50in}
+%was -.30
+\addtolength{\textwidth}{0.90in}
+\addtolength{\textheight}{1.50in}
+%was .60
+
+%my name format
+\renewcommand{\namefont}{\LARGE\emph}
+
+\begin{document}
+\name{Qi Yao}
+\address{
+  CodeSourcery
+}
+%\address{
+%  Current Address:
+%  15 Briarwood lane\\
+%  Marlborough, MA 01752\\
+%  USA
+%}
+%\address{
+%  Permanent Address:
+%  377 Rue De Aqueduc\\
+%  Quebec, G1N 2N7\\
+%  Canada
+%}
+\address{
+  \href{yao@codesourcery.com}{\texttt{yao@codesourcery.com}}\\
+}
+
+\begin{resume}
+
+\section{\textsc{PERSONAL PARTICULARS}}
+\begin{tabular}{l l}
+Name & \texttt{Qi Yao} \\
+Sex & \texttt{Male} \\
+%Date of Birth & \texttt{4 1 1982} \\
+Place of Birth & \texttt{ShannXi Province} \\
+Degree & \texttt{Master Degree} \\
+Major & \texttt{Computer Science} \\
+School & \texttt{Beijing Institute of Technology} \\
+\end{tabular}
+\section{\textsc{CONTACT}}
+\begin{tabular}{l l}
+E-mail: & \href{qiyaoltc@gmail.com}{\texttt{qiyaoltc@gmail.com}} \\
+Tel: & \texttt{(86-10) 82350741} \\
+Mobile: & \texttt{134-3931-1927} \\
+\end{tabular}
+
+\begin{format}
+  \employer{l}\title{r}\\
+  \location{l}\dates{r}\\
+  \body\\
+\end{format}
+
+\section{\textsc{EXPERIENCE \& PROJECTS}}
+\employer{\textbf{CodeSourcery}}
+\title{\emph{Sourcerer}}
+\location{Beijing}
+\dates{\textbf{July.2010 - Present}}
+\begin{position}
+\begin{enumerate}
+\item[] \emph{GDB} maintainer for tic6x port.
+\item[] Advanced asynchronous remote notification framework added into \emph{GDB}.
+\item[] New \emph{MI} notifications added into \emph{GDB}.
+\item[] New debugging technology using agent in \emph{GDB}.
+\item[] GNU toolchain development for \href{http://www.linaro.org}{\emph{http://www.linaro.org}} Toolchain Working Group (sponsored by ARM).
+\item[] Various code size optimization and impromvent on \emph{Thumb-2} instructions.  Improve register renaming pass in \emph{GCC} to prefer to low register on ARM-v7.  Benchmark results show 0.3\% improvements on code size.
+\item[] Fix various GCC and GDB bugs.
+\item[] Communicate with open source toolchain community smoothly, and push changes into repository.
+\end{enumerate}
+\end{position}
+
+\employer{\textbf{IBM China Development Lab}}
+\title{\emph{Staff Software Engineer}}
+\location{Beijing}
+\dates{\textbf{July.2008 - June.2010}}
+\begin{position}
+\begin{enumerate}
+\item[] \emph{Multicore SDK} design and integrate an all-in-one toolkit for parallel programs on multicore platform.  Released on \href{http://www.alphaworks.ibm.com/tech/msdk}{\emph{alphaWorks}}.  Some best algorithms and implementation methods are invented in order to resolve some challenging problems, like runtime overhead and accuracy.  It is the \emph{first} product tool for parallel java program analysis.
+\item[] \emph{MultiThread Runtime Analysis Tool} design and development for multi-core platform.  Released on \href{http://www.alphaworks.ibm.com/tech/mtrat}{\emph{alphaWorks}}
+
+\item[] \textbf{Qi, Yao} and Das, Raja and Luo, Zhi Da and Trotter, Martin.  MulticoreSDK: a practical and efficient data race detector for real-world applications.  PADTAD '09: Proceedings of the 7th Workshop on Parallel and Distributed Systems.
+\item[] \textbf{Yao Qi}, Yarden Nir-buchbinder, Raja Das, Zhi Da Luo, Eitan Farchi and Zhi Gan.  Unit Testing for Concurrent Business Code.  PADTAD’10 July 12, Trento, Italy.
+\item[] Zhi Da Luo, Linda Hillis, Raja Das and \textbf{Yao Qi}. Effective Static Analysis to Find Concurrency Bugs in Java.  2010 10th IEEE Working Conference on Source Code Analysis and Manipulation.
+\item[] Zhi Da Luo, Raja Das, and \textbf{Yao Qi}.  MulticoreSDK : A Practical and Efficient Deadlock Detector for Real-World Applications.  2011 The IEEE International Conference on Software Testing, Verification and Validation.
+\end{enumerate}
+\end{position}
+
+\employer{\textbf{IBM China Development Lab}}
+\title{\emph{Software Engineer}}
+\location{Beijing}
+\dates{\textbf{July.2006 - July.2008}}
+\begin{position}
+\begin{enumerate}
+\item[] \href{http://www.sourceware.org/frysk}{\emph{frysk}} development and enablement for \emph{PowerPC64} platform.
+\item[] \href{http://www.sourceware.org/gdb}{\emph{GDB}} development and \emph{checkpoint} implementation.
+\item[] Contributor of \emph{Decimal Float Point} in \href{http://gcc.gnu.org}{\emph{GCC}}.
+\item[] Design and implement user-mode instruction trace on \href{http://www.valgrind.org/}{\emph{Valgrind}}.
+\item[] Write testsuites for \emph{Oprofile}, \emph{ltrace}, and \emph{Strace}.
+\end{enumerate}
+\end{position}
+
+
+\section{\textsc{Professional Skills}}
+\begin{enumerate} 
+\item[] Deep knowledge of \emph{compiler}, \emph{debugger}, \emph{thread mechanism} and \emph{system run-time} features.
+\item[] Deep understand of \emph{Java Virtual Machine}, \emph{Byte Code Instrumentation} and \emph{Just In Time} compilation.
+\item[] Proficient in \emph{C}, \emph{C++}, \emph{JAVA}.
+\item[] Experienced on \emph{embedded system}, and computer architecture(\emph{ARM} and \emph{PowerPC}).
+\item[] Experienced on development on \emph{UNIX} platforms, such as Solaris and AIX.
+\item[] Experienced on communication and work model in open source community.
+\item[] Familiar with \emph{Shell script}, \emph{Perl}, and \emph{Python}.
+\item[] Daily life in \emph{Linux}.
+\item[] Good at \emph{Tcl/Expect} and 
+ \LaTeX
+\end{enumerate}
+
+\section{\textsc{Technical Achievements}}
+\begin{enumerate}
+\item[] A good experience on design and implement a dynamic and static analysis tool for concurrent java program with low overhead and high accuracy.
+\item[] A active innovator.  Certified IBM \emph{Senior Inventor}(the first five in Great China Group).  Filed more than 20 patents.
+\item[] A good open source developer.  Familiar with open source development model.
+\item[] Good communication in English.
+\item[] Good leadership.  Co-chair of \emph{Invention Development Team} in IBM China Software Development Lab
+\end{enumerate}
+
+\section{\textsc{EDUCATION}}
+
+\employer{\textbf{Computer Science}}
+\title{\emph{Master}}
+\location{Beijing Institute of Technology}
+\dates{\textbf{Sep.2004 - July.2006}}
+\begin{position}
+\end{position}
+
+\employer{\textbf{Computer Science}}
+\title{\emph{Bachelor}}
+\location{Beijing Institute of Technology}
+\dates{\textbf{Sep.2000-Jul.2004}}
+\begin{position}
+\end{position}
+
+
+%\section{\textsc{International Skills}}
+%\emph{Languages}: Spoken and written English; spoken Swiss German and some French
+
+%\emph{Citizenship}: Canada, Switzerland, France
+
+
+%Association for Computing Machinery.
+%National and Worcester chapter member.\\
+%1997 -- Present
+
+%; GPA: 3.1
+
+%\section{\textsc{Course Work}}
+%  \begin{tabular}{lll}
+%  Operating Systems I \& II	&
+%  Logic Circuits		&
+%  Computer Graphics		\\
+%  Introduction to AI		&
+%  Microprocessor Systems	&
+%  Computer Music		\\
+%  Computer Architecture		&
+%  Software Engineering		&
+%  Algorithms			\\
+%  Compilers 			&
+%  Computer Networks 		&
+%  Human-Computer Interaction	\\
+%  \end{tabular}
+
+%\section{\textsc{Project Work}}
+%\emph{Major Qualifying Project} --- An Iconic Recipe Server.\newline
+%	Design of a system for non-verbal [iconic] representation of sets of
+%	instructions [recipes] coupled with a networked Java based client \&
+%	server for the entry and retrieval of iconic recipes.
+
+%\emph{Interdisciplinary Qualifying Project} --- The Digital Peddler.\newline
+%	Production of a digital yearbook; a study of digital multimedia
+%	production as opposed to traditional media production.
+
+%\emph{Humanities Sufficiency Project} --- Continuity and the Self.  A topic in
+%Philosophy.
+
+
+%
+%November 19th, 2001
+%
+\end{resume}
+\end{document}
