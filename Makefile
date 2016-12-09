@@ -1,6 +1,4 @@
-PRE=resume 
-
-all: $(PRE).pdf $(PRE).ps
+all: resume.pdf resume.ps
 
 %.pdf: %.tex
 	pdflatex $<
@@ -8,11 +6,9 @@ all: $(PRE).pdf $(PRE).ps
 %.ps: %.dvi
 	dvips -o $@ $<
 
-$(PRE).dvi: $(PRE).tex
-	latex $(PRE); latex $(PRE)
+%.dvi: %.tex
+	latex $<; latex $<
 clean:
 	rm -f *.log *.aux
-
-fresh: clean
 	rm -f *.ps *.pdf *.dvi
 
